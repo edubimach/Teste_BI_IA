@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "66995a4cd2db6d654440",
-  "displayName": "Página 2",
+  "displayName": "Visão Geral",
   "displayOption": "FitToPage",
   "height": 760,
   "width": 1470,
