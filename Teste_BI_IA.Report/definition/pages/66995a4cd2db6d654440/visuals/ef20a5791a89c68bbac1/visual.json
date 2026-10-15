@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "ef20a5791a89c68bbac1",
+  "position": {
+    "x": 644.01226993865032,
+    "y": 106.58895705521472,
+    "z": 11,
+    "height": 205.1165644171779,
+    "width": 312.601226993865,
+    "tabOrder": 11
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuais"
+                    }
+                  },
+                  "Property": "TOP 5 CUSTOMERS PROJECTS SVG"
+                }
+              },
+              "queryRef": "Visuais.TOP 5 CUSTOMERS PROJECTS SVG",
+              "nativeQueryRef": "TOP 5 CUSTOMERS PROJECTS SVG"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "compatibility": [
+        {
+          "properties": {
+            "legacyRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

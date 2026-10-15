@@ -1,0 +1,86 @@
+table Medidas
+	lineageTag: a6fb268c-880c-4a2c-90ff-79c7c6c2852f
+
+	measure 'TOTAL WEIGHT' =
+			
+			SUM ( ProjetosFake[Weight_Ton] )
+		formatString: #,0.00
+		lineageTag: eb200c97-b881-49f0-9375-260367ad565b
+
+	measure 'TOTAL PROJECT' =
+			
+			DISTINCTCOUNT ( ProjetosFake[Project_ID] )
+		formatString: 0
+		lineageTag: 2c56778e-f88b-4704-983b-4b7237986131
+
+	measure 'TOTAL CUSTOMERS' =
+			
+			DISTINCTCOUNT ( ProjetosFake[Customer] )
+		formatString: 0
+		lineageTag: 401823d5-2607-4056-9440-c23c7e44e3ab
+
+	measure 'AVG DURATION WEEKS' =
+			
+			AVERAGE ( ProjetosFake[Duration_Weeks] )
+		lineageTag: 83383326-799d-4906-b57a-9739a757ebe0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'NO OF BUILDINGS' =
+			
+			SUM (ProjetosFake[No_Buildings] )
+		formatString: 0
+		lineageTag: c94bbcf9-4c20-4012-9a1b-0f805363b231
+
+	measure 'RANK CUSTOMER TONNAGE' =
+			
+			RANKX (
+			    ALLSELECTED ( ProjetosFake[Customer] ),
+			    [TOTAL WEIGHT],
+			    ,
+			    DESC,
+			    DENSE
+			)
+		formatString: 0
+		lineageTag: ba6729a2-03a7-46d8-bdc6-0082cad30787
+
+	measure 'TOP 5 CUSTOMER FLAG' =
+			
+			IF (
+			    [RANK CUSTOMER TONNAGE] <= 5,
+			    1,
+			    0
+			)
+		formatString: 0
+		lineageTag: ff556299-0627-486d-aa42-0404f2fdb76d
+
+	measure 'PROJECT COUNT' =
+			
+			DISTINCTCOUNT ( ProjetosFake[Project_ID] )
+		formatString: 0
+		lineageTag: 5d32cb9e-660f-4043-9029-3f3cef4b9de9
+
+	measure 'YEAR PROJECT' =
+			
+			YEAR ( MAX ( ProjetosFake[Start_Date] ) )
+		formatString: 0
+		lineageTag: 1d145446-0bcf-4b2c-ad93-1f67f463e14a
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: 613229f1-a21e-4dc5-b329-fddbc7c3ab41
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = a240f332b6b84aa393708ebfdb976349
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "17cdfc188bd8a1e8b4ad",
+  "position": {
+    "x": 12.343387470997678,
+    "y": 439.07192575406032,
+    "z": 7,
+    "height": 235.40603248259859,
+    "width": 312.11136890951275,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuais"
+                    }
+                  },
+                  "Property": "COUNT PROJECTS BY SALES OFFICE SVG"
+                }
+              },
+              "queryRef": "Visuais.COUNT PROJECTS BY SALES OFFICE SVG",
+              "nativeQueryRef": "COUNT PROJECTS BY SALES OFFICE SVG"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "compatibility": [
+        {
+          "properties": {
+            "legacyRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

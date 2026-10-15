@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "d2cfb92ede916a1e31c1",
+  "position": {
+    "x": 325.33642691415309,
+    "y": 521.06728538283062,
+    "z": 10,
+    "height": 238.05104408352668,
+    "width": 638.32946635730855,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Visuais"
+                    }
+                  },
+                  "Property": "TOTAL WEIGHT OVER TIME SVG"
+                }
+              },
+              "queryRef": "Visuais.TOTAL WEIGHT OVER TIME SVG",
+              "nativeQueryRef": "TOTAL WEIGHT OVER TIME SVG"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "compatibility": [
+        {
+          "properties": {
+            "legacyRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,120 @@
+table ProjetosFake
+	lineageTag: 77f46672-7879-4f96-97b9-3c3344e1e9bd
+
+	column Project_ID
+		dataType: string
+		lineageTag: 0ffc74bc-4688-47bb-bed8-f2fdc65a1941
+		summarizeBy: none
+		sourceColumn: Project_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Project_Name
+		dataType: string
+		lineageTag: 789cb152-700a-49e9-b200-054928652ad9
+		summarizeBy: none
+		sourceColumn: Project_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer
+		dataType: string
+		lineageTag: 9c2f8168-557d-4520-ac58-fd8c7ad23dbb
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 58cf3819-e8bb-4273-9aab-489a4674832b
+		dataCategory: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales_Office
+		dataType: string
+		lineageTag: 6e4898b9-e0e2-4473-aeda-187a17746108
+		summarizeBy: none
+		sourceColumn: Sales_Office
+
+		annotation SummarizationSetBy = Automatic
+
+	column Responsible_Sales
+		dataType: string
+		lineageTag: f3c16dc4-71e4-4953-bfa1-5eabe9a4d68c
+		summarizeBy: none
+		sourceColumn: Responsible_Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Start_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5a5e5c06-d0a5-4c46-bc5f-83b083a2798f
+		summarizeBy: none
+		sourceColumn: Start_Date
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column End_Date
+		dataType: int64
+		formatString: 0
+		lineageTag: c91337d5-a3d1-4e0a-898f-2554a2c91f79
+		summarizeBy: sum
+		sourceColumn: End_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duration_Weeks
+		dataType: int64
+		formatString: 0
+		lineageTag: bfca3411-ca57-486c-9cbc-e1eef5bedd8d
+		summarizeBy: sum
+		sourceColumn: Duration_Weeks
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weight_Ton
+		dataType: double
+		lineageTag: 05b06472-3bfa-48b7-800b-2462cb7fb016
+		summarizeBy: sum
+		sourceColumn: Weight_Ton
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column No_Buildings
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a88bab5-fb00-4531-a2c9-0b16bfd907a5
+		summarizeBy: sum
+		sourceColumn: No_Buildings
+
+		annotation SummarizationSetBy = Automatic
+
+	column Project_Status
+		dataType: string
+		lineageTag: b535d8bf-9a61-4aa2-a57f-6ddbd5de96b4
+		summarizeBy: none
+		sourceColumn: Project_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ProjetosFake = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents("C:\Users\eduardo.machado\Downloads\Base_Fake_Dashboard_Projetos.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "ProjetosFake", Kind = "Table"]}[Data],
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Navegação 1", {{"Project_ID", type text}, {"Project_Name", type text}, {"Customer", type text}, {"Country", type text}, {"Sales_Office", type text}, {"Responsible_Sales", type text}, {"Start_Date", Int64.Type}, {"End_Date", Int64.Type}, {"Duration_Weeks", Int64.Type}, {"Weight_Ton", type number}, {"No_Buildings", Int64.Type}, {"Project_Status", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

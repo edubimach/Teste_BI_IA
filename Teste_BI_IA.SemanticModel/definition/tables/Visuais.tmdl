@@ -1,0 +1,2234 @@
+table Visuais
+	lineageTag: 3cea8fce-456d-4401-9609-be8f3032ff07
+
+	measure 'CARD TOTAL WEIGHT SVG' =
+			
+			VAR vValor =
+			    [TOTAL WEIGHT]
+			
+			VAR vValorFormatado =
+			    FORMAT ( vValor, "#,##0" )
+			
+			VAR vSVG =
+			"
+			<svg xmlns='http://www.w3.org/2000/svg'
+			     width='240'
+			     height='90'
+			     viewBox='0 0 240 90'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur stdDeviation='2.5' result='blur'/>
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+			            <stop offset='0%' stop-color='#101821'/>
+			            <stop offset='100%' stop-color='#18222D'/>
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='238'
+			        height='88'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#AEBBC7'
+			        font-family='Segoe UI'
+			        font-size='11'
+			        font-weight='600'>
+			        Total Weight (Ton)
+			    </text>
+			
+			    <g transform='translate(16,43)'>
+			
+			        <path
+			            d='M0 0 L17 17 M10 17 H17 V10'
+			            stroke='#8FA6B7'
+			            stroke-width='2.5'
+			            fill='none'
+			            stroke-linecap='round'
+			            stroke-linejoin='round'
+			        />
+			
+			    </g>
+			
+			    <text
+			        x='58'
+			        y='65'
+			        fill='#E8C978'
+			        font-family='Segoe UI'
+			        font-size='23'
+			        font-weight='700'
+			        filter='url(#glow)'>
+			        " & vValorFormatado & "
+			    </text>
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 42f25307-6f66-467a-ac16-ed03f3597b6a
+		dataCategory: ImageUrl
+
+	measure 'CARD TOTAL PROJECT SVG' =
+			
+			VAR vValor =
+			    [TOTAL PROJECT]
+			
+			VAR vValorFormatado =
+			    FORMAT ( vValor, "#,##0" )
+			
+			VAR vSVG =
+			"
+			<svg xmlns='http://www.w3.org/2000/svg'
+			     width='240'
+			     height='90'
+			     viewBox='0 0 240 90'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur stdDeviation='2.5' result='blur'/>
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+			            <stop offset='0%' stop-color='#101821'/>
+			            <stop offset='100%' stop-color='#18222D'/>
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='238'
+			        height='88'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#AEBBC7'
+			        font-family='Segoe UI'
+			        font-size='11'
+			        font-weight='600'>
+			        Total Project
+			    </text>
+			
+			    <g transform='translate(16,42)'>
+			
+			        <rect
+			            x='0'
+			            y='2'
+			            width='24'
+			            height='18'
+			            rx='2'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			        />
+			
+			        <path
+			            d='M3 0 H10 L14 4 H23'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			            stroke-linecap='round'
+			        />
+			
+			    </g>
+			
+			    <text
+			        x='58'
+			        y='65'
+			        fill='#E8C978'
+			        font-family='Segoe UI'
+			        font-size='23'
+			        font-weight='700'
+			        filter='url(#glow)'>
+			        " & vValorFormatado & "
+			    </text>
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 08368a91-f807-4d70-8e27-e86b47110bad
+		dataCategory: ImageUrl
+
+	measure 'CARD TOTAL CUSTOMERS SVG' =
+			
+			VAR vValor =
+			    [TOTAL CUSTOMERS]
+			
+			VAR vValorFormatado =
+			    FORMAT ( vValor, "#,##0" )
+			
+			VAR vSVG =
+			"
+			<svg xmlns='http://www.w3.org/2000/svg'
+			     width='240'
+			     height='90'
+			     viewBox='0 0 240 90'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur stdDeviation='2.5' result='blur'/>
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+			            <stop offset='0%' stop-color='#101821'/>
+			            <stop offset='100%' stop-color='#18222D'/>
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='238'
+			        height='88'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#AEBBC7'
+			        font-family='Segoe UI'
+			        font-size='11'
+			        font-weight='600'>
+			        Total Customers
+			    </text>
+			
+			    <g transform='translate(16,39)'>
+			
+			        <circle
+			            cx='11'
+			            cy='8'
+			            r='6'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			        />
+			
+			        <path
+			            d='M3 27
+			               C3 19,19 19,19 27'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			            stroke-linecap='round'
+			        />
+			
+			        <line
+			            x1='11'
+			            y1='14'
+			            x2='11'
+			            y2='22'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			        />
+			
+			    </g>
+			
+			    <text
+			        x='58'
+			        y='65'
+			        fill='#E86A7A'
+			        font-family='Segoe UI'
+			        font-size='23'
+			        font-weight='700'
+			        filter='url(#glow)'>
+			        " & vValorFormatado & "
+			    </text>
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 258fcf9a-cdc6-48fc-9fb2-ab9797159d3a
+		dataCategory: ImageUrl
+
+	measure 'CARD AVG DURATION SVG' =
+			
+			VAR vValor =
+			    [AVG DURATION WEEKS]
+			
+			VAR vValorFormatado =
+			    FORMAT ( vValor, "0" )
+			
+			VAR vSVG =
+			"
+			<svg xmlns='http://www.w3.org/2000/svg'
+			     width='240'
+			     height='90'
+			     viewBox='0 0 240 90'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur stdDeviation='2.5' result='blur'/>
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+			            <stop offset='0%' stop-color='#101821'/>
+			            <stop offset='100%' stop-color='#18222D'/>
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='238'
+			        height='88'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#AEBBC7'
+			        font-family='Segoe UI'
+			        font-size='11'
+			        font-weight='600'>
+			        Avg Duration (Weeks)
+			    </text>
+			
+			    <g transform='translate(16,40)'>
+			
+			        <circle
+			            cx='12'
+			            cy='12'
+			            r='11'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			        />
+			
+			        <line
+			            x1='12'
+			            y1='12'
+			            x2='12'
+			            y2='5'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			            stroke-linecap='round'
+			        />
+			
+			        <line
+			            x1='12'
+			            y1='12'
+			            x2='18'
+			            y2='16'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			            stroke-linecap='round'
+			        />
+			
+			    </g>
+			
+			    <text
+			        x='58'
+			        y='65'
+			        fill='#55D7FF'
+			        font-family='Segoe UI'
+			        font-size='23'
+			        font-weight='700'
+			        filter='url(#glow)'>
+			        " & vValorFormatado & "
+			    </text>
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: d1f9d21c-4178-4bab-aa37-011c7ab89b50
+		dataCategory: ImageUrl
+
+	measure 'CARD NO OF BUILDINGS SVG' =
+			
+			VAR vValor =
+			    [NO OF BUILDINGS]
+			
+			VAR vValorFormatado =
+			    FORMAT ( vValor, "#,##0" )
+			
+			VAR vSVG =
+			"
+			<svg xmlns='http://www.w3.org/2000/svg'
+			     width='240'
+			     height='90'
+			     viewBox='0 0 240 90'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur stdDeviation='2.5' result='blur'/>
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+			            <stop offset='0%' stop-color='#101821'/>
+			            <stop offset='100%' stop-color='#18222D'/>
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='238'
+			        height='88'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#AEBBC7'
+			        font-family='Segoe UI'
+			        font-size='11'
+			        font-weight='600'>
+			        No Of Buildings
+			    </text>
+			
+			    <g transform='translate(16,38)'>
+			
+			        <rect
+			            x='2'
+			            y='3'
+			            width='21'
+			            height='27'
+			            fill='none'
+			            stroke='#8FA6B7'
+			            stroke-width='2.3'
+			        />
+			
+			        <line x1='7' y1='8' x2='7' y2='12'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <line x1='12' y1='8' x2='12' y2='12'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <line x1='18' y1='8' x2='18' y2='12'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <line x1='7' y1='16' x2='7' y2='20'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <line x1='12' y1='16' x2='12' y2='20'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <line x1='18' y1='16' x2='18' y2='20'
+			              stroke='#8FA6B7' stroke-width='1.8'/>
+			
+			        <rect
+			            x='10'
+			            y='23'
+			            width='5'
+			            height='7'
+			            fill='#8FA6B7'
+			        />
+			
+			    </g>
+			
+			    <text
+			        x='58'
+			        y='65'
+			        fill='#62E5A8'
+			        font-family='Segoe UI'
+			        font-size='23'
+			        font-weight='700'
+			        filter='url(#glow)'>
+			        " & vValorFormatado & "
+			    </text>
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: f8dfad9a-0a13-4977-a72d-3b2e4f5fdf18
+		dataCategory: ImageUrl
+
+	measure 'TOP 5 CUSTOMERS TONNAGE SVG' =
+			
+			VAR vTop5 =
+			    TOPN (
+			        5,
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Customer] ),
+			            "Peso", [TOTAL WEIGHT]
+			        ),
+			        [Peso],
+			        DESC
+			    )
+			
+			VAR vMaxPeso =
+			    MAXX (
+			        vTop5,
+			        [Peso]
+			    )
+			
+			VAR vLinhas =
+			    CONCATENATEX (
+			        vTop5,
+			
+			        VAR vCliente =
+			            ProjetosFake[Customer]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vRank =
+			            RANKX (
+			                vTop5,
+			                [Peso],
+			                ,
+			                DESC,
+			                DENSE
+			            )
+			
+			        VAR vY =
+			            45 + ( vRank - 1 ) * 28
+			
+			        /* Área máxima disponível para as barras */
+			        VAR vLarguraMaxima =
+			            145
+			
+			        VAR vLargura =
+			            DIVIDE (
+			                vPeso,
+			                vMaxPeso,
+			                0
+			            ) * vLarguraMaxima
+			
+			        /* Início da barra */
+			        VAR vBarraX =
+			            105
+			
+			        /* Valor fica depois do final da barra */
+			        VAR vValorX =
+			            vBarraX + vLargura + 7
+			
+			        RETURN
+			            "
+			            <text
+			                x='16'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='11'>
+			                " & vCliente & "
+			            </text>
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 10 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='10'
+			                rx='2'
+			                fill='#55D7FF'
+			                opacity='0.25'
+			            />
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 10 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='10'
+			                rx='2'
+			                fill='none'
+			                stroke='#55D7FF'
+			                stroke-width='1.2'
+			                filter='url(#glow)'
+			            />
+			
+			            <text
+			                x='" & FORMAT ( vValorX, "0.0", "en-US" ) & "'
+			                y='" & vY & "'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='10'
+			                font-weight='600'>
+			                " & FORMAT ( vPeso, "#,##0" ) & "
+			            </text>
+			            ",
+			        "",
+			        [Peso],
+			        DESC
+			    )
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur
+			                stdDeviation='2'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Top 5 Customers By Tonnage
+			    </text>
+			
+			    " & vLinhas & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: f60c2e44-644c-4cc5-b999-4e782137b411
+
+	measure 'TOP 5 CUSTOMERS PROJECTS SVG' =
+			
+			VAR vTop5 =
+			    TOPN (
+			        5,
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Customer] ),
+			            "QtdProjetos", [PROJECT COUNT]
+			        ),
+			        [QtdProjetos],
+			        DESC
+			    )
+			
+			VAR vMaxProjetos =
+			    MAXX (
+			        vTop5,
+			        [QtdProjetos]
+			    )
+			
+			VAR vLinhas =
+			    CONCATENATEX (
+			        vTop5,
+			
+			        VAR vCliente =
+			            ProjetosFake[Customer]
+			
+			        VAR vQtdProjetos =
+			            [QtdProjetos]
+			
+			        VAR vRank =
+			            RANKX (
+			                vTop5,
+			                [QtdProjetos],
+			                ,
+			                DESC,
+			                DENSE
+			            )
+			
+			        VAR vY =
+			            45 + ( vRank - 1 ) * 28
+			
+			        VAR vLarguraMaxima =
+			            145
+			
+			        VAR vLargura =
+			            DIVIDE (
+			                vQtdProjetos,
+			                vMaxProjetos,
+			                0
+			            ) * vLarguraMaxima
+			
+			        VAR vBarraX =
+			            105
+			
+			        VAR vValorX =
+			            vBarraX + vLargura + 7
+			
+			        RETURN
+			            "
+			            <text
+			                x='16'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='11'>
+			                " & vCliente & "
+			            </text>
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 10 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='10'
+			                rx='2'
+			                fill='#E86A7A'
+			                opacity='0.22'
+			            />
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 10 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='10'
+			                rx='2'
+			                fill='none'
+			                stroke='#E86A7A'
+			                stroke-width='1.2'
+			                filter='url(#glow)'
+			            />
+			
+			            <text
+			                x='" & FORMAT ( vValorX, "0.0", "en-US" ) & "'
+			                y='" & vY & "'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='10'
+			                font-weight='600'>
+			                " & FORMAT ( vQtdProjetos, "#,##0" ) & "
+			            </text>
+			            ",
+			        "",
+			        [QtdProjetos],
+			        DESC
+			    )
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur
+			                stdDeviation='2'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Top 5 Customers By No Of Projects
+			    </text>
+			
+			    " & vLinhas & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 92da3866-7844-4427-9ce3-0581f1828e38
+
+	measure 'TONNAGE BY COUNTRY SVG' =
+			
+			VAR vTabela =
+			    FILTER (
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Country] ),
+			            "Peso", [TOTAL WEIGHT]
+			        ),
+			        NOT ISBLANK ( [Peso] )
+			            && [Peso] > 0
+			    )
+			
+			VAR vMaxPeso =
+			    MAXX (
+			        vTabela,
+			        [Peso]
+			    )
+			
+			VAR vLinhas =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vPais =
+			            ProjetosFake[Country]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vRank =
+			            RANKX (
+			                vTabela,
+			                [Peso],
+			                ,
+			                DESC,
+			                DENSE
+			            )
+			
+			        VAR vY =
+			            42 + ( vRank - 1 ) * 16
+			
+			        VAR vBarraX =
+			            88
+			
+			        VAR vLarguraMaxima =
+			            145
+			
+			        VAR vLargura =
+			            DIVIDE (
+			                vPeso,
+			                vMaxPeso,
+			                0
+			            ) * vLarguraMaxima
+			
+			        VAR vValorX =
+			            vBarraX + vLargura + 5
+			
+			        RETURN
+			            "
+			            <text
+			                x='14'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='8.5'>
+			                " & vPais & "
+			            </text>
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 8 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='7'
+			                rx='1.5'
+			                fill='#55D7FF'
+			                opacity='0.20'
+			            />
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 8 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='7'
+			                rx='1.5'
+			                fill='none'
+			                stroke='#55D7FF'
+			                stroke-width='1'
+			                filter='url(#glow)'
+			            />
+			
+			            <text
+			                x='" & FORMAT ( vValorX, "0.0", "en-US" ) & "'
+			                y='" & vY & "'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='8'
+			                font-weight='600'>
+			                " & FORMAT ( vPeso, "#,##0" ) & "
+			            </text>
+			            ",
+			        "",
+			        [Peso],
+			        DESC
+			    )
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur
+			                stdDeviation='1.8'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Tonnage By Country
+			    </text>
+			
+			    " & vLinhas & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 596c25d8-04de-481d-8d07-e614b97e9394
+
+	measure 'TOTAL WEIGHT BY RESPONSIBLE SALES SVG' =
+			
+			VAR vTabela =
+			    FILTER (
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Responsible_Sales] ),
+			            "Peso", [TOTAL WEIGHT]
+			        ),
+			        NOT ISBLANK ( [Peso] )
+			            && [Peso] > 0
+			    )
+			
+			VAR vMaxPeso =
+			    MAXX (
+			        vTabela,
+			        [Peso]
+			    )
+			
+			VAR vLinhas =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vVendedor =
+			            ProjetosFake[Responsible_Sales]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vRank =
+			            RANKX (
+			                vTabela,
+			                [Peso],
+			                ,
+			                DESC,
+			                DENSE
+			            )
+			
+			        VAR vY =
+			            43 + ( vRank - 1 ) * 15
+			
+			        VAR vBarraX =
+			            80
+			
+			        VAR vLarguraMaxima =
+			            145
+			
+			        VAR vLargura =
+			            DIVIDE (
+			                vPeso,
+			                vMaxPeso,
+			                0
+			            ) * vLarguraMaxima
+			
+			        VAR vValorX =
+			            vBarraX + vLargura + 5
+			
+			        RETURN
+			            "
+			            <text
+			                x='14'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='8.5'>
+			                " & vVendedor & "
+			            </text>
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 8 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='7'
+			                rx='1.5'
+			                fill='#55D7FF'
+			                opacity='0.20'
+			            />
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 8 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='7'
+			                rx='1.5'
+			                fill='none'
+			                stroke='#55D7FF'
+			                stroke-width='1'
+			                filter='url(#glow)'
+			            />
+			
+			            <text
+			                x='" & FORMAT ( vValorX, "0.0", "en-US" ) & "'
+			                y='" & vY & "'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='8'
+			                font-weight='600'>
+			                " & FORMAT ( vPeso, "#,##0" ) & "
+			            </text>
+			            ",
+			        "",
+			        [Peso],
+			        DESC
+			    )
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter id='glow'>
+			            <feGaussianBlur
+			                stdDeviation='1.8'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			        </filter>
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Total Weight By Responsible Sales
+			    </text>
+			
+			    " & vLinhas & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 94fa283b-1d23-46e9-bd60-a7de96e7b462
+
+	measure 'TOTAL WEIGHT BY SALES OFFICE SVG' =
+			
+			VAR vTabelaBase =
+			    FILTER (
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Sales_Office] ),
+			            "Peso", [TOTAL WEIGHT]
+			        ),
+			        NOT ISBLANK ( [Peso] )
+			            && [Peso] > 0
+			    )
+			
+			VAR vTotal =
+			    SUMX (
+			        vTabelaBase,
+			        [Peso]
+			    )
+			
+			VAR vTabela =
+			    ADDCOLUMNS (
+			        vTabelaBase,
+			
+			        "RankOffice",
+			            VAR vPesoAtual = [Peso]
+			            VAR vOfficeAtual = ProjetosFake[Sales_Office]
+			            RETURN
+			                1 +
+			                COUNTROWS (
+			                    FILTER (
+			                        vTabelaBase,
+			                        [Peso] > vPesoAtual
+			                            ||
+			                        (
+			                            [Peso] = vPesoAtual
+			                                &&
+			                            ProjetosFake[Sales_Office] < vOfficeAtual
+			                        )
+			                    )
+			                )
+			    )
+			
+			/* =========================================================
+			   CONFIGURAÇÃO DA ROSCA
+			   ========================================================= */
+			
+			VAR vCentroX =
+			    105
+			
+			VAR vCentroY =
+			    103
+			
+			VAR vRaio =
+			    46
+			
+			VAR vCircunferencia =
+			    2 * PI () * vRaio
+			
+			
+			/* =========================================================
+			   SEGMENTOS
+			   ========================================================= */
+			
+			VAR vSegmentos =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vOffice =
+			            ProjetosFake[Sales_Office]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vRank =
+			            [RankOffice]
+			
+			        VAR vPercentual =
+			            DIVIDE (
+			                vPeso,
+			                vTotal,
+			                0
+			            )
+			
+			        VAR vAcumuladoAnterior =
+			            SUMX (
+			                FILTER (
+			                    vTabela,
+			                    [RankOffice] < vRank
+			                ),
+			                DIVIDE (
+			                    [Peso],
+			                    vTotal,
+			                    0
+			                )
+			            )
+			
+			        VAR vComprimento =
+			            vCircunferencia * vPercentual
+			
+			        VAR vEspaco =
+			            vCircunferencia - vComprimento
+			
+			        VAR vOffset =
+			            -1 * vCircunferencia * vAcumuladoAnterior
+			
+			        VAR vCor =
+			            SWITCH (
+			                vRank,
+			                1, "#32E6F2",
+			                2, "#F4D35E",
+			                3, "#FF647C",
+			                4, "#8C7CFF",
+			                "#62E5A8"
+			            )
+			
+			        RETURN
+			            "
+			            <circle
+			                cx='" & vCentroX & "'
+			                cy='" & vCentroY & "'
+			                r='" & vRaio & "'
+			                fill='none'
+			                stroke='" & vCor & "'
+			                stroke-width='13'
+			                stroke-linecap='round'
+			                stroke-dasharray='"
+			                    & FORMAT ( vComprimento, "0.00", "en-US" )
+			                    & " "
+			                    & FORMAT ( vEspaco, "0.00", "en-US" )
+			                    & "'
+			                stroke-dashoffset='"
+			                    & FORMAT ( vOffset, "0.00", "en-US" )
+			                    & "'
+			                transform='rotate(-90 "
+			                    & vCentroX
+			                    & " "
+			                    & vCentroY
+			                    & ")'
+			                filter='url(#glow)'
+			            />
+			            ",
+			        "",
+			        [RankOffice],
+			        ASC
+			    )
+			
+			
+			/* =========================================================
+			   LEGENDA
+			   ========================================================= */
+			
+			VAR vLegenda =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vOffice =
+			            ProjetosFake[Sales_Office]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vRank =
+			            [RankOffice]
+			
+			        VAR vPercentual =
+			            DIVIDE (
+			                vPeso,
+			                vTotal,
+			                0
+			            )
+			
+			        VAR vY =
+			            62 + ( vRank - 1 ) * 29
+			
+			        VAR vCor =
+			            SWITCH (
+			                vRank,
+			                1, "#32E6F2",
+			                2, "#F4D35E",
+			                3, "#FF647C",
+			                4, "#8C7CFF",
+			                "#62E5A8"
+			            )
+			
+			        RETURN
+			            "
+			            <circle
+			                cx='184'
+			                cy='" & ( vY - 4 ) & "'
+			                r='3'
+			                fill='" & vCor & "'
+			                filter='url(#smallGlow)'
+			            />
+			
+			            <text
+			                x='193'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='9'>
+			                " & vOffice & "
+			            </text>
+			
+			            <text
+			                x='282'
+			                y='" & vY & "'
+			                text-anchor='end'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='8.5'
+			                font-weight='600'>
+			                " & FORMAT ( vPercentual, "0.0%" ) & "
+			            </text>
+			            ",
+			        "",
+			        [RankOffice],
+			        ASC
+			    )
+			
+			
+			/* =========================================================
+			   SVG
+			   ========================================================= */
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter
+			            id='glow'
+			            x='-50%'
+			            y='-50%'
+			            width='200%'
+			            height='200%'>
+			
+			            <feGaussianBlur
+			                stdDeviation='2.5'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			
+			        </filter>
+			
+			
+			        <filter
+			            id='smallGlow'
+			            x='-100%'
+			            y='-100%'
+			            width='300%'
+			            height='300%'>
+			
+			            <feGaussianBlur
+			                stdDeviation='1.5'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			
+			        </filter>
+			
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			
+			    <!-- FUNDO -->
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			
+			    <!-- TÍTULO -->
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Total Weight By Sales Office
+			    </text>
+			
+			
+			    <!-- TRILHO DA ROSCA -->
+			
+			    <circle
+			        cx='" & vCentroX & "'
+			        cy='" & vCentroY & "'
+			        r='" & vRaio & "'
+			        fill='none'
+			        stroke='#263541'
+			        stroke-width='13'
+			    />
+			
+			
+			    <!-- SEGMENTOS -->
+			
+			    " & vSegmentos & "
+			
+			
+			    <!-- CENTRO -->
+			
+			    <circle
+			        cx='" & vCentroX & "'
+			        cy='" & vCentroY & "'
+			        r='35'
+			        fill='#121D27'
+			    />
+			
+			
+			    <text
+			        x='" & vCentroX & "'
+			        y='98'
+			        text-anchor='middle'
+			        fill='#8FA6B7'
+			        font-family='Segoe UI'
+			        font-size='8'
+			        font-weight='600'>
+			        TOTAL
+			    </text>
+			
+			
+			    <text
+			        x='" & vCentroX & "'
+			        y='114'
+			        text-anchor='middle'
+			        fill='#FFFFFF'
+			        font-family='Segoe UI'
+			        font-size='13'
+			        font-weight='700'>
+			        " & FORMAT ( vTotal, "#,##0" ) & "
+			    </text>
+			
+			
+			    <!-- LEGENDA -->
+			
+			    " & vLegenda & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 87d858f4-bd1e-4ba0-a899-4071bc7972b0
+
+	measure 'COUNT PROJECTS BY SALES OFFICE SVG' =
+			
+			VAR vTabela =
+			    FILTER (
+			        ADDCOLUMNS (
+			            VALUES ( ProjetosFake[Sales_Office] ),
+			            "QtdProjetos", [PROJECT COUNT]
+			        ),
+			        NOT ISBLANK ( [QtdProjetos] )
+			            && [QtdProjetos] > 0
+			    )
+			
+			VAR vMaxProjetos =
+			    MAXX (
+			        vTabela,
+			        [QtdProjetos]
+			    )
+			
+			VAR vLinhas =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vOffice =
+			            ProjetosFake[Sales_Office]
+			
+			        VAR vQtd =
+			            [QtdProjetos]
+			
+			        VAR vRank =
+			            RANKX (
+			                vTabela,
+			                [QtdProjetos],
+			                ,
+			                DESC,
+			                DENSE
+			            )
+			
+			        VAR vY =
+			            54 + ( vRank - 1 ) * 34
+			
+			        VAR vBarraX =
+			            82
+			
+			        VAR vLarguraMaxima =
+			            145
+			
+			        VAR vLargura =
+			            DIVIDE (
+			                vQtd,
+			                vMaxProjetos,
+			                0
+			            ) * vLarguraMaxima
+			
+			        VAR vValorX =
+			            vBarraX + vLargura + 6
+			
+			        VAR vCor =
+			            SWITCH (
+			                vRank,
+			                1, "#F4D35E",
+			                2, "#FF647C",
+			                3, "#32E6F2",
+			                4, "#8C7CFF",
+			                "#62E5A8"
+			            )
+			
+			        RETURN
+			            "
+			            <text
+			                x='14'
+			                y='" & vY & "'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='10'>
+			                " & vOffice & "
+			            </text>
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 12 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='13'
+			                rx='2'
+			                fill='" & vCor & "'
+			                opacity='0.20'
+			            />
+			
+			            <rect
+			                x='" & vBarraX & "'
+			                y='" & ( vY - 12 ) & "'
+			                width='" & FORMAT ( vLargura, "0.0", "en-US" ) & "'
+			                height='13'
+			                rx='2'
+			                fill='none'
+			                stroke='" & vCor & "'
+			                stroke-width='1.4'
+			                filter='url(#glow)'
+			            />
+			
+			            <text
+			                x='" & FORMAT ( vValorX, "0.0", "en-US" ) & "'
+			                y='" & vY & "'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='9'
+			                font-weight='700'>
+			                " & FORMAT ( vQtd, "#,##0" ) & "
+			            </text>
+			            ",
+			        "",
+			        [QtdProjetos],
+			        DESC
+			    )
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='300'
+			    height='190'
+			    viewBox='0 0 300 190'>
+			
+			    <defs>
+			
+			        <filter
+			            id='glow'
+			            x='-50%'
+			            y='-50%'
+			            width='200%'
+			            height='200%'>
+			
+			            <feGaussianBlur
+			                stdDeviation='2'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			
+			        </filter>
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='298'
+			        height='188'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			    <text
+			        x='14'
+			        y='22'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Count Of Projects By Sales Office
+			    </text>
+			
+			    " & vLinhas & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 98fff423-0f32-4631-9a75-9bec33920868
+
+	measure 'TOTAL WEIGHT OVER TIME SVG' =
+			
+			VAR vAnos =
+			    DISTINCT (
+			        SELECTCOLUMNS (
+			            VALUES ( ProjetosFake[Start_Date] ),
+			            "Ano", YEAR ( ProjetosFake[Start_Date] )
+			        )
+			    )
+			
+			VAR vTabela =
+			    FILTER (
+			        ADDCOLUMNS (
+			            vAnos,
+			            "Peso",
+			                VAR vAnoAtual = [Ano]
+			                RETURN
+			                    CALCULATE (
+			                        [TOTAL WEIGHT],
+			                        FILTER (
+			                            ALLSELECTED ( ProjetosFake[Start_Date] ),
+			                            YEAR ( ProjetosFake[Start_Date] ) = vAnoAtual
+			                        )
+			                    )
+			        ),
+			        NOT ISBLANK ( [Ano] )
+			            && NOT ISBLANK ( [Peso] )
+			    )
+			
+			VAR vQtdAnos =
+			    COUNTROWS ( vTabela )
+			
+			VAR vMinPeso =
+			    MINX (
+			        vTabela,
+			        [Peso]
+			    )
+			
+			VAR vMaxPeso =
+			    MAXX (
+			        vTabela,
+			        [Peso]
+			    )
+			
+			
+			/* =========================================================
+			   ÁREA DO GRÁFICO
+			   ========================================================= */
+			
+			VAR vInicioX =
+			    65
+			
+			VAR vFimX =
+			    590
+			
+			/* Mais espaço superior para os rótulos */
+			VAR vTopoY =
+			    55
+			
+			VAR vBaseY =
+			    180
+			
+			VAR vAlturaGrafico =
+			    vBaseY - vTopoY
+			
+			VAR vLarguraGrafico =
+			    vFimX - vInicioX
+			
+			
+			/* =========================================================
+			   GRID HORIZONTAL
+			   ========================================================= */
+			
+			VAR vGrid =
+			    CONCATENATEX (
+			        GENERATESERIES ( 0, 4, 1 ),
+			
+			        VAR vIndice =
+			            [Value]
+			
+			        VAR vY =
+			            vTopoY
+			                + (
+			                    DIVIDE (
+			                        vIndice,
+			                        4,
+			                        0
+			                    )
+			                    * vAlturaGrafico
+			                )
+			
+			        VAR vValorEscala =
+			            vMaxPeso
+			                - (
+			                    DIVIDE (
+			                        vIndice,
+			                        4,
+			                        0
+			                    )
+			                    * ( vMaxPeso - vMinPeso )
+			                )
+			
+			        RETURN
+			            "
+			            <line
+			                x1='" & vInicioX & "'
+			                y1='" & FORMAT ( vY, "0.0", "en-US" ) & "'
+			                x2='" & vFimX & "'
+			                y2='" & FORMAT ( vY, "0.0", "en-US" ) & "'
+			                stroke='#33414D'
+			                stroke-width='0.7'
+			                opacity='0.65'
+			            />
+			
+			            <text
+			                x='55'
+			                y='" & FORMAT ( vY + 3, "0.0", "en-US" ) & "'
+			                text-anchor='end'
+			                fill='#7F919F'
+			                font-family='Segoe UI'
+			                font-size='8'>
+			                " & FORMAT ( vValorEscala / 1000, "0.0" ) & "K
+			            </text>
+			            ",
+			        ""
+			    )
+			
+			
+			/* =========================================================
+			   PONTOS DA LINHA
+			   ========================================================= */
+			
+			VAR vPontos =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vAno =
+			            [Ano]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vPosicao =
+			            RANKX (
+			                vTabela,
+			                [Ano],
+			                ,
+			                ASC,
+			                DENSE
+			            )
+			
+			        VAR vX =
+			            IF (
+			                vQtdAnos = 1,
+			                DIVIDE ( vInicioX + vFimX, 2 ),
+			                vInicioX
+			                    + DIVIDE (
+			                        vPosicao - 1,
+			                        vQtdAnos - 1,
+			                        0
+			                    )
+			                    * vLarguraGrafico
+			            )
+			
+			        VAR vY =
+			            IF (
+			                vMaxPeso = vMinPeso,
+			                vTopoY + DIVIDE ( vAlturaGrafico, 2 ),
+			                vBaseY
+			                    - DIVIDE (
+			                        vPeso - vMinPeso,
+			                        vMaxPeso - vMinPeso,
+			                        0
+			                    )
+			                    * vAlturaGrafico
+			            )
+			
+			        RETURN
+			            FORMAT ( vX, "0.0", "en-US" )
+			                & ","
+			                & FORMAT ( vY, "0.0", "en-US" ),
+			
+			        " ",
+			        [Ano],
+			        ASC
+			    )
+			
+			
+			/* =========================================================
+			   MARCADORES + RÓTULOS + ANOS
+			   ========================================================= */
+			
+			VAR vMarcadores =
+			    CONCATENATEX (
+			        vTabela,
+			
+			        VAR vAno =
+			            [Ano]
+			
+			        VAR vPeso =
+			            [Peso]
+			
+			        VAR vPosicao =
+			            RANKX (
+			                vTabela,
+			                [Ano],
+			                ,
+			                ASC,
+			                DENSE
+			            )
+			
+			        VAR vX =
+			            IF (
+			                vQtdAnos = 1,
+			                DIVIDE ( vInicioX + vFimX, 2 ),
+			                vInicioX
+			                    + DIVIDE (
+			                        vPosicao - 1,
+			                        vQtdAnos - 1,
+			                        0
+			                    )
+			                    * vLarguraGrafico
+			            )
+			
+			        VAR vY =
+			            IF (
+			                vMaxPeso = vMinPeso,
+			                vTopoY + DIVIDE ( vAlturaGrafico, 2 ),
+			                vBaseY
+			                    - DIVIDE (
+			                        vPeso - vMinPeso,
+			                        vMaxPeso - vMinPeso,
+			                        0
+			                    )
+			                    * vAlturaGrafico
+			            )
+			
+			        /* Rótulo fica acima do ponto */
+			        VAR vRotuloY =
+			            vY - 11
+			
+			        RETURN
+			            "
+			
+			            <!-- PONTO -->
+			
+			            <circle
+			                cx='" & FORMAT ( vX, "0.0", "en-US" ) & "'
+			                cy='" & FORMAT ( vY, "0.0", "en-US" ) & "'
+			                r='4'
+			                fill='#E8FFFF'
+			                stroke='#55D7FF'
+			                stroke-width='1.5'
+			                filter='url(#pointGlow)'
+			            />
+			
+			
+			            <!-- RÓTULO DO VALOR -->
+			
+			            <text
+			                x='" & FORMAT ( vX, "0.0", "en-US" ) & "'
+			                y='" & FORMAT ( vRotuloY, "0.0", "en-US" ) & "'
+			                text-anchor='middle'
+			                fill='#E8C978'
+			                font-family='Segoe UI'
+			                font-size='9'
+			                font-weight='700'>
+			                " & FORMAT ( vPeso, "#,##0" ) & "
+			            </text>
+			
+			
+			            <!-- ANO -->
+			
+			            <text
+			                x='" & FORMAT ( vX, "0.0", "en-US" ) & "'
+			                y='" & FORMAT ( vBaseY + 17, "0.0", "en-US" ) & "'
+			                text-anchor='middle'
+			                fill='#AEBBC7'
+			                font-family='Segoe UI'
+			                font-size='9'>
+			                " & vAno & "
+			            </text>
+			            ",
+			
+			        "",
+			        [Ano],
+			        ASC
+			    )
+			
+			
+			/* =========================================================
+			   SVG
+			   ========================================================= */
+			
+			VAR vSVG =
+			"
+			<svg
+			    xmlns='http://www.w3.org/2000/svg'
+			    width='620'
+			    height='220'
+			    viewBox='0 0 620 220'>
+			
+			    <defs>
+			
+			        <filter
+			            id='lineGlow'
+			            x='-30%'
+			            y='-30%'
+			            width='160%'
+			            height='160%'>
+			
+			            <feGaussianBlur
+			                stdDeviation='3'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			
+			        </filter>
+			
+			
+			        <filter
+			            id='pointGlow'
+			            x='-100%'
+			            y='-100%'
+			            width='300%'
+			            height='300%'>
+			
+			            <feGaussianBlur
+			                stdDeviation='2'
+			                result='blur'
+			            />
+			
+			            <feMerge>
+			                <feMergeNode in='blur'/>
+			                <feMergeNode in='SourceGraphic'/>
+			            </feMerge>
+			
+			        </filter>
+			
+			
+			        <linearGradient
+			            id='bg'
+			            x1='0'
+			            y1='0'
+			            x2='1'
+			            y2='1'>
+			
+			            <stop
+			                offset='0%'
+			                stop-color='#101821'
+			            />
+			
+			            <stop
+			                offset='100%'
+			                stop-color='#18222D'
+			            />
+			
+			        </linearGradient>
+			
+			    </defs>
+			
+			
+			    <!-- FUNDO -->
+			
+			    <rect
+			        x='1'
+			        y='1'
+			        width='618'
+			        height='218'
+			        rx='7'
+			        fill='url(#bg)'
+			        stroke='#34495E'
+			        stroke-width='1'
+			    />
+			
+			
+			    <!-- TÍTULO -->
+			
+			    <text
+			        x='16'
+			        y='24'
+			        fill='#D7E1EA'
+			        font-family='Segoe UI'
+			        font-size='12'
+			        font-weight='700'>
+			        Total Weight Over Time
+			    </text>
+			
+			
+			    <!-- GRID -->
+			
+			    " & vGrid & "
+			
+			
+			    <!-- LINHA -->
+			
+			    <polyline
+			        points='" & vPontos & "'
+			        fill='none'
+			        stroke='#E8FFFF'
+			        stroke-width='2.2'
+			        stroke-linecap='round'
+			        stroke-linejoin='round'
+			        filter='url(#lineGlow)'
+			    />
+			
+			
+			    <!-- PONTOS + RÓTULOS + ANOS -->
+			
+			    " & vMarcadores & "
+			
+			</svg>
+			"
+			
+			RETURN
+			    vSVG
+		lineageTag: 580368a2-5d2c-46b6-8dce-ff99be8b8e8d
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: da638806-2173-45d9-bec3-131a113b7ce9
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Visuais = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 687af3aa95d944ecaedfc9651c86b40d
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

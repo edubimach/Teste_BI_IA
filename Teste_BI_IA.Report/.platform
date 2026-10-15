@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Teste_BI_IA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6b3a5d17-b4d0-4c89-b3fd-52257da147fa"
+  }
+}
